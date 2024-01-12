@@ -1,135 +1,179 @@
-/* --global-- */
-:root {
-   --white: #fff;
-   --blueberry: #050542;
-   --turquoise: #66e5bf;
-   --lavender: #a675f5;
-   --attention: #050542;
-   --attention-background: #05054233;
-   --call-to-action: #fffc86;
-   --rounded: .4rem;
-   --pilled: 1.4rem;
-   --shadow: .3rem;
-   --border: .15rem;
-}
 * {
-   box-sizing: border-box;
-}
-body{
-   margin: 1rem; 
-   padding: 0;
-   font-family: "Open Sans", sans-serif;
-   font-size: 1.2rem;
-   line-height: 1.4;
-   background: var(--blueberry);
-   color: var(--white);
-}
-h1{
-
-}
-h2{
-   font-size: 2rem;
-   font-weight: 400;
-}
-ul{
-   list-style: none;
-   padding: 0;
-}
-ol{
-   list-style: none;
-}
-a{
-   color: var(--turquoise);
-}
-a:hover, a:active{
-   background: var(--turquoise);
-   color: var(--blueberry)
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mark Pro";
 }
 
-/* SECTIONS */
-section, footer{
-   padding: 1rem;
-   margin-bottom: 2rem;
-}
-nav{
+/* Fonts */
+@import url(https://db.onlinewebfonts.com/c/7200c6dd8ac604abe09f5159e53a40c0?family=Mark+Pro);
 
+:root {
+  /* colors for typography */
+  --zwart---: #000;
+  --wit---: #fff;
+  /* secundary colors */
+  --blauw---: #003cfb;
+  --groen---: #02c758;
+  --rood---: rgb(231, 70, 30);
+  /* tertaire colors */
+  --blauw-accenet--: #001863;
+  --groen-accent--: rgb(0, 143, 63);
+  --red-accent--: #670002;
+  /* Fonts */
 }
-nav h2{
 
+header {
+  display: flex;
 }
-#intro{
-   max-width: 40rem;
+/* Start navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #003cfb;
+  width: 100%;
+  border-bottom-left-radius: 90%;
 }
-#gedragscriteria{
-   max-width: 25rem;
+nav ul {
+  display: none;
 }
-#leertaken{
-   max-width: 25rem;
-}
-#leertaken ul{
-   list-style: disc;
-   padding-left: 1rem;;
-}
-#sprintplanning{
 
+nav a {
+  display: flex;
+  justify-content: center;
 }
-#sprintplanning th,#sprintplanning td{
-   background: var(--turquoise);
-   color: var(--blueberry);
-   display: inline-block;
-   width: 100%;
-   padding: 0.5rem;
+/* Start navbar classes */
+.van-ons-img {
+  height: 2.5em;
+  width: auto;
+  margin: 1em;
 }
+
+.test {
+  display: flex;
+  justify-content: end;
+}
+
+/* Einde navbar */
+/* Start landing page content */
+
+h1 {
+  text-align: center;
+  margin-top: 4em;
+  padding: 0.5em;
+  font-family: "Mark Pro Bold";
+}
+p {
+  text-align: center;
+  padding: 1.2em;
+  border-radius: 10px;
+}
+button{
+   margin-top: 3em;
+   background: var(--groen---);
+   border: none;
+   border-radius: 15px;
+   padding: 0.7em;
+   transition: 0.3s;  
+}
+button:hover{
+   background: var(--groen-accent--);
+}
+.bekijk-fases{
+   text-decoration: none;
+   color: white;
+}
+/* start van Cards */
+
+.fase-one{
+   border: solid 1px black;
+   height: 19em;
+   width: 19em;
+   margin: 3em auto;
+   padding: 1em;
+   border-radius: 1em;
+   background:lightgrey;
+   border: none;
+  
+}
+/* begin footer */
+
 footer{
-
+   background-color: #003cfb;
+   color: var(--wit---);
 }
 
+footer h4{
+   margin-bottom: 0.5em;
+}
+
+footer li{
+   list-style: none;
+   margin-top: 0.2em;
+}
+
+footer li a{
+   text-decoration: none;
+   color: var(--wit---);
+}
+
+.footer-col{
+width: 100%;
+text-align: center;
+padding: 1em;
+display: block;
+}
 
 
-/* CLASSES */
-.green-on-blue{
-   background: var(--turquoise);
-   color: var(--blueberry);
-}
-.green-line-on-blue{
-   /* background: var(--turquoise); */
-   border: solid var(--turquoise) var(--border);
-   color: var(--turquoise);
-}
-.white-line-on-blue{
-   /* background: var(--turquoise); */
-   border: solid var(--white) var(--border);
-   color: var(--white);
-}
-.white-line-on-blue a{
-   color: var(--white);
-}
-.purple-on-blue{
-   background: var(--lavender);
-   color: var(--blueberry);
-}
-.active{
-   background: var(--call-to-action);
-   color: var(--blueberry);
-}
-.rounded{
-   border-radius: var(--rounded);
-  }
-.pilled{
- border-radius: var(--pilled);
-}
-.shadow{
-   box-shadow: var(--shadow) var(--shadow);
-  }
+/* Media Qeuries */
 
-  /* MEDIA QUERIES */
-@media (min-width: 45rem){
-   body{
-      /* background: pink; */
+@media (min-width:640px){
+nav ul{
+   display: block;
+   justify-content: center;
+}
+nav ul li{
+   list-style: none;
+}
+nav li a{
+   text-decoration: none;
+   color: var(--wit---);
+   margin: 1.0em 1.3em 0em 6em;
+}
+.cards{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+}
+.fase-one{
+   width: 19em;
+   height: 19em;
+}
+/* footer */
+footer{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+}
+}
+
+/* Media voor tekst */
+
+@media (min-width:800px){
+   p{
+      width: 40em;
+      margin: 0 auto;
    }
-   #gedragscriteria, #leertaken{
-      display: inline-block;
-      width: 48%;
-      vertical-align: top;
+}
+
+/* desktop versie */
+
+@media (min-width:1080px){
+   .cards{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+   }
+   /* footer */
+   footer{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
    }
 }

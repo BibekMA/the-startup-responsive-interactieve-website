@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../../Downloads/Van Ons Assets/Extra"
+		},
+		{
+			"path": "../../../../Downloads/Van Ons Assets/Figures"
+		},
+		{
+			"path": "../../../../Downloads/Van Ons Assets/Fonts"
+		},
+		{
+			"path": "../../../../Downloads/Van Ons Assets/Logo"
+		},
+		{
+			"path": "../../../../Downloads/Van Ons Assets/Mascotte"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "the-startup-responsive-interactieve-website"
+	}
+}
