@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mark Pro";
+}
+
+/* Fonts */
+@import url(https://db.onlinewebfonts.com/c/7200c6dd8ac604abe09f5159e53a40c0?family=Mark+Pro);
+
+:root {
+  /* colors for typography */
+  --zwart---: #000;
+  --wit---: #fff;
+  /* secundary colors */
+  --blauw---: #003cfb;
+  --groen---: #02c758;
+  --rood---: rgb(231, 70, 30);
+  /* tertaire colors */
+  --blauw-accenet--: #001863;
+  --groen-accent--: rgb(0, 143, 63);
+  --red-accent--: #670002;
+  /* Fonts */
+}
+/* start header */
+header{
+  background: var(--blauw---);
+  color: white;
+  height: 10em;
+}
+
+header h1{
+  font-family: "Mark Pro bold";
+}
+
+path{
+  fill: white;
+}
+
+.verwelkoming{
+  display: flex;
+  justify-content: center;
+  padding: 1em 0.2em 0 0.2em;
+}
+
+.img-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+}
+
+.vanons-logo{
+height: 5em;
+width: auto;
+}
+
+ 
+

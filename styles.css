@@ -26,27 +26,68 @@
 header {
   display: flex;
 }
+
+.login-header{
+  display: flex;
+  justify-items: row;
+}
+
 /* Start navbar */
 nav {
-  display: flex;
-  justify-content: space-between;
   background-color: #003cfb;
   width: 100%;
   border-bottom-left-radius: 90%;
 }
-nav ul {
-  display: none;
+
+.nav-menu{
+  position: fixed;
+  left: 100%;
+  transition: 0.3s;
+  
+}
+.nav-menu.active{
+  left: 0;
+  background: var(--blauw---);
+  width: 100%;
+  height: 13em;
+  text-align: center;
+  padding-top: 2em;
+  color: white;
+  list-style: none;
+}
+nav li{
+  margin: 16px 0;
+  list-style: none;
 }
 
-nav a {
-  display: flex;
-  justify-content: center;
+nav li a{
+  text-decoration: none;
+  color:#fff
+}
+
+.hamburger{
+   display: flex;
+   justify-content: end;
+   margin: 1em 1em 0 0;
+}
+.hamburger-icon{
+   fill: white;
+   z-index: 1000;
+}
+
+.line{
+   margin: 1em 1em 0em 0em;
+   width: 6px;
+   height: 4px;
+   background: var(--wit---);
+   gap: 2px;
 }
 /* Start navbar classes */
 .van-ons-img {
   height: 2.5em;
   width: auto;
   margin: 1em;
+  z-index: 1000;
 }
 
 .test {
@@ -68,112 +109,158 @@ p {
   padding: 1.2em;
   border-radius: 10px;
 }
-button{
-   margin-top: 3em;
-   background: var(--groen---);
-   border: none;
-   border-radius: 15px;
-   padding: 0.7em;
-   transition: 0.3s;  
+
+span{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+
 }
-button:hover{
-   background: var(--groen-accent--);
+button {
+  margin-top: 3em;
+  background: var(--groen---);
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  padding: 0.7em;
+  transition: 0.3s;
 }
-.bekijk-fases{
-   text-decoration: none;
-   color: white;
+button:hover {
+  background: var(--groen-accent--);
+}
+.bekijk-fases {
+  text-decoration: none;
+  color: white;
 }
 /* start van Cards */
 
-.fase-one{
-   border: solid 1px black;
-   height: 19em;
-   width: 19em;
-   margin: 3em auto;
-   padding: 1em;
-   border-radius: 1em;
-   background:lightgrey;
-   border: none;
-  
+.fase-one {
+  height: 19em;
+  width: 19em;
+  margin: 3em auto;
+  border-radius: 0.3em;
+  background: lightgrey;
+  border-right: solid 8px var(--blauw---);
+  transition: 0.3s;
+}
+ .cards a{
+  text-decoration: none;
+  color: black;
+}
+
+.fase-one:hover{
+  color: white;
+  background: #003cfb;
+}
+
+.card-content h3{
+  display: flex;
+  justify-content: center;
 }
 /* begin footer */
 
-footer{
-   background-color: #003cfb;
-   color: var(--wit---);
+footer {
+  background-color: #003cfb;
+  color: var(--wit---);
 }
 
-footer h4{
-   margin-bottom: 0.5em;
+footer h4 {
+  margin-bottom: 0.5em;
 }
 
-footer li{
-   list-style: none;
-   margin-top: 0.2em;
+footer li {
+  list-style: none;
+  margin-top: 0.2em;
 }
 
-footer li a{
-   text-decoration: none;
-   color: var(--wit---);
+footer li a {
+  text-decoration: none;
+  color: var(--wit---);
 }
 
-.footer-col{
-width: 100%;
-text-align: center;
-padding: 1em;
-display: block;
+.footer-col {
+  width: 100%;
+  text-align: center;
+  padding: 1em;
+  display: block;
 }
-
 
 /* Media Qeuries */
 
-@media (min-width:640px){
-nav ul{
-   display: block;
-   justify-content: center;
-}
-nav ul li{
-   list-style: none;
-}
-nav li a{
-   text-decoration: none;
-   color: var(--wit---);
-   margin: 1.0em 1.3em 0em 6em;
-}
-.cards{
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-}
-.fase-one{
-   width: 19em;
-   height: 19em;
-}
-/* footer */
-footer{
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-}
+@media (min-width: 640px) {
+  /* navbar */
+  .hamburger{
+   display: none;
+  }
+
+  .nav-menu{
+    position: static;
+    display: flex;
+    justify-content: end;
+    gap: 30px;
+    margin-right: 1em;
+
+  }
+
+
+
+  
+  /* main cards content */
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+  }
+  .fase-one {
+    width: 19em;
+    height: 19em;
+  }
+  .card-content h1{
+   margin: 1em;
+   padding: 0;
+  }
+
+  .fase-one:nth-child(5){
+   margin-left: ;
+  }
+  /* footer */
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 /* Media voor tekst */
 
-@media (min-width:800px){
-   p{
-      width: 40em;
-      margin: 0 auto;
+@media (min-width: 800px) {
+  .landing-page{
+    max-width: 48em;
+    margin: 0 auto;
    }
 }
-
 /* desktop versie */
 
-@media (min-width:1080px){
-   .cards{
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-   }
-   /* footer */
-   footer{
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-   }
+@media (min-width: 1080px) {
+  /* main cards content */
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  /* footer */
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .cards {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 35px;
+   max-width: 1080px;
+   margin: 0 auto; }
+
+  
 }
