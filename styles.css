@@ -27,7 +27,7 @@ header {
   display: flex;
 }
 
-.login-header{
+.login-header {
   display: flex;
   justify-items: row;
 }
@@ -39,13 +39,12 @@ nav {
   border-bottom-left-radius: 90%;
 }
 
-.nav-menu{
+.nav-menu {
   position: fixed;
   left: 100%;
   transition: 0.3s;
-  
 }
-.nav-menu.active{
+.nav-menu.active {
   left: 0;
   background: var(--blauw---);
   width: 100%;
@@ -55,32 +54,32 @@ nav {
   color: white;
   list-style: none;
 }
-nav li{
+nav li {
   margin: 16px 0;
   list-style: none;
 }
 
-nav li a{
+nav li a {
   text-decoration: none;
-  color:#fff
+  color: #fff;
 }
 
-.hamburger{
-   display: flex;
-   justify-content: end;
-   margin: 1em 1em 0 0;
+.hamburger {
+  display: flex;
+  justify-content: end;
+  margin: 1em 1em 0 0;
 }
-.hamburger-icon{
-   fill: white;
-   z-index: 1000;
+.hamburger-icon {
+  fill: white;
+  z-index: 1000;
 }
 
-.line{
-   margin: 1em 1em 0em 0em;
-   width: 6px;
-   height: 4px;
-   background: var(--wit---);
-   gap: 2px;
+.line {
+  margin: 1em 1em 0em 0em;
+  width: 6px;
+  height: 4px;
+  background: var(--wit---);
+  gap: 2px;
 }
 /* Start navbar classes */
 .van-ons-img {
@@ -110,11 +109,10 @@ p {
   border-radius: 10px;
 }
 
-span{
+span {
   display: flex;
   justify-content: center;
   gap: 30px;
-
 }
 button {
   margin-top: 3em;
@@ -143,20 +141,25 @@ button:hover {
   border-right: solid 8px var(--blauw---);
   transition: 0.3s;
 }
- .cards a{
+.cards a {
   text-decoration: none;
   color: black;
 }
 
-.fase-one:hover{
+.fase-one:hover {
   color: white;
   background: #003cfb;
 }
 
-.card-content h3{
+.card-content{
+  padding: 0.5em;
+}
+
+.card-content h3 {
   display: flex;
   justify-content: center;
 }
+
 /* begin footer */
 
 footer {
@@ -189,22 +192,18 @@ footer li a {
 
 @media (min-width: 640px) {
   /* navbar */
-  .hamburger{
-   display: none;
+  .hamburger {
+    display: none;
   }
 
-  .nav-menu{
+  .nav-menu {
     position: static;
     display: flex;
     justify-content: end;
     gap: 30px;
     margin-right: 1em;
-
   }
 
-
-
-  
   /* main cards content */
   .cards {
     display: flex;
@@ -217,13 +216,13 @@ footer li a {
     width: 19em;
     height: 19em;
   }
-  .card-content h1{
-   margin: 1em;
-   padding: 0;
+  .card-content h1 {
+    margin: 1em;
+    padding: 0;
   }
 
-  .fase-one:nth-child(5){
-   margin-left: ;
+  .fase-one:nth-child(5) {
+    margin-left: ;
   }
   /* footer */
   footer {
@@ -235,10 +234,10 @@ footer li a {
 /* Media voor tekst */
 
 @media (min-width: 800px) {
-  .landing-page{
+  .landing-page {
     max-width: 48em;
     margin: 0 auto;
-   }
+  }
 }
 /* desktop versie */
 
@@ -254,13 +253,12 @@ footer li a {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
   .cards {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-wrap: wrap;
-   gap: 35px;
-   max-width: 1080px;
-   margin: 0 auto; }
-
-  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 35px;
+    max-width: 1080px;
+    margin: 0 auto;
+  }
 }

@@ -26,33 +26,220 @@
 header{
   background: var(--blauw---);
   color: white;
-  height: 10em;
+  height: 12em;
+  width: 100%;
 }
 
 header h1{
-  font-family: "Mark Pro bold";
-}
-
-path{
-  fill: white;
-}
-
-.verwelkoming{
-  display: flex;
-  justify-content: center;
-  padding: 1em 0.2em 0 0.2em;
+ font-family: "Mark Pro bold";
+ display: flex;
+ justify-content: center;
+ padding: 1em;
 }
 
 .img-container{
+display: flex;
+justify-content: center;
+}
+
+.branding{
+  height: 2em;
+  width: auto;
+  margin-top: 0%;
+}
+
+.branding path{
+  fill: white;
+}
+
+
+/* Start nav */
+
+nav{
+  background: rgb(43, 42, 42);
+  height: 3em;
+  width: 100%;
+  font-size: 0.9em;
+  margin-top: 3em;
+}
+
+nav ul{
   display: flex;
   justify-content: center;
-  margin-top: 1em;
+  gap: 10px;
+  padding: 0.5em;
 }
 
-.vanons-logo{
-height: 5em;
-width: auto;
+nav ul li{
+  list-style: none;
 }
 
+nav ul li a{
+ text-decoration: none;
+ color: white;
+}
+
+/* start main */
+
+.status{
+  margin-top: 5em;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
  
 
+.status-container{
+  width: 20em;
+  margin: 1em auto;
+  background: rgb(43, 42, 42);
+  transition: 0.3s;
+  color: var(--wit---);
+  border-radius: 1em;
+}
+
+.status-container:hover{
+  box-shadow: 0 14px 20px rgb(87, 85, 84)
+}
+
+.status-container h1{
+  padding: 1em;
+  text-align: center;
+}
+
+.status-container li{
+  padding: 0.5em 1.5em 0.5em 1.5em;
+  font-size: 0.7em;
+}
+
+.status-container li:nth-child(6){
+  padding-bottom: 2em;
+}
+
+/* mockup */
+
+.mockup{
+  display: flex;
+  justify-content: center;
+}
+
+.mockup-test{
+  margin-top: 5em;
+  width: 15em;
+  height: auto;
+}
+
+.bar{
+  display: block;
+  height: 1.5em;
+  border-radius: 0.5em;
+  overflow: hidden;
+  margin-top: 1em;
+  background: lightgray;
+}
+
+.bar span{
+  height: 20px;
+  float: left;
+  background: var(--groen---);
+}
+
+.opstart{
+  width: 100%;
+}
+.design{
+  width: 100%;
+}
+.development{
+  width: 70%;
+}
+.test{
+  width: 0%;
+}
+.oplever{
+  width: 0%;
+}
+
+/* start cards */
+
+.cards-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 5em;
+  transition: 0.25s;
+}
+
+.cards-container h1{
+  font-family: "Mark Pro bold";
+  color: var(--zwart---);
+  font-weight: 700;
+  padding: 1em;
+  color: white;
+}
+
+.cards{
+  margin: 2em;
+  height: 13em;
+  width: 20em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background: rgb(43, 42, 42);
+  transition: 0.2s;
+  border-radius: 1em;
+}
+.cards:hover{
+background: var(--blauw---);
+box-shadow: #073cea 0 14px 20px;
+}
+
+a{
+  text-decoration: none;
+}
+
+.cards-icon{
+  height: 3.5em;
+  width: auto;
+  fill: white;
+}
+
+/* media kleine telefoon */
+@media (min-width: 375px){
+  nav{
+    width: 100%;
+  }
+}
+
+ /* tablet version */
+@media (min-width: 768px){
+  .status{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .mockup-test{
+    height: 14em;
+    width: auto;
+  }
+  header h1{
+    font-size: 1.8em;
+  }
+  nav{
+    margin-top: 0.9em;
+  }
+  .branding{
+    height: 3em;
+    width: auto;
+    padding: 0.5em;
+  }
+}
+  
+@media (min-width: 1080px){
+  .mockup-test{
+    height: 16em;
+    width: auto;
+  }
+}
