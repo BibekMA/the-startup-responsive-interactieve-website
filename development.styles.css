@@ -1,0 +1,400 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mark Pro";
+}
+
+/* Fonts */
+@import url(https://db.onlinewebfonts.com/c/7200c6dd8ac604abe09f5159e53a40c0?family=Mark+Pro);
+
+:root {
+  /* colors for typography */
+  --zwart---: #000;
+  --wit---: #fff;
+  /* secundary colors */
+  --blauw---: #003cfb;
+  --groen---: #02c758;
+  --rood---: rgb(231, 70, 30);
+  /* tertaire colors */
+  --blauw-accenet--: #001863;
+  --groen-accent--: rgb(0, 143, 63);
+  --red-accent--: #670002;
+  /* Fonts */
+}
+/* start header */
+header {
+  background: var(--blauw---);
+  color: white;
+  height: 12em;
+  width: 100%;
+}
+
+header h1 {
+  font-family: "Mark Pro bold";
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+}
+
+.branding {
+  height: 2em;
+  width: auto;
+  margin-top: 0%;
+}
+
+.branding path {
+  fill: white;
+}
+
+/* header for development-fase */
+
+.development-header {
+  padding: 2.4em;
+}
+
+/* Start nav */
+
+nav {
+  background: rgb(43, 42, 42);
+  height: 3em;
+  width: 100%;
+  font-size: 0.9em;
+  color: black;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+nav ul li {
+  list-style: none;
+  padding: 0.5em;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--wit---);
+}
+
+/* start articel */
+
+.flex {
+  background: rgb(237, 237, 237);
+  width: 100%;
+  padding: 3em;
+}
+
+article {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: rgb(237, 237, 237);
+}
+
+article h1 {
+  font-family: "mark pro bold";
+  font-size: 1.5em;
+}
+
+
+article span:nth-child(1) {
+  font-size: 1.1em;
+  font-family: "mark pro bold";
+}
+
+article span{
+  padding: 2em;
+}
+
+article p {
+  text-align: center;
+  max-width: 20em;
+  margin-top: 0.5em;
+}
+
+.article-footer a {
+  text-decoration: none;
+  color: var(--blauw---);
+  font-family: "mark pro bold";
+  display: flex;
+  padding: 1em;
+}
+
+/* Onze team */
+
+.onze-team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background: rgb(237, 237, 237);
+}
+
+.article-header {
+  text-align: center;
+}
+
+.flex h2 {
+  font-family: "mark pro bold";
+  padding-top: 2em;
+  padding-bottom: 2em;
+  display: block;
+}
+
+.onze-team p {
+  padding: 0.5em;
+}
+.onze-team img {
+  height: 6em;
+  width: auto;
+  border-radius: 50%;
+  padding: 0.2em;
+  background: var(--wit---);
+  transition: 0.3s;
+  border: solid 5px var(--blauw---);
+}
+
+.onze-team img:hover {
+  box-shadow: 0 7px 14px var(--blauw---);
+}
+.onze-team div p {
+  font-family: "mark pro bold";
+}
+
+.img-two img {
+  border: solid var(--rood---) 5px;
+}
+.img-two img:hover {
+  box-shadow: 0 7px 14px var(--rood---);
+}
+
+/* 3 */
+.onze-team div:nth-child(3) img {
+  border: solid var(--groen---) 5px;
+}
+
+.onze-team div:nth-child(3) img:hover {
+  box-shadow: 0 7px 14px var(--groen---);
+}
+
+.onze-team div:nth-child(4) img {
+  border: solid var(--zwart---) 5px;
+}
+.onze-team div:nth-child(4) img:hover {
+  box-shadow: 0 7px 14px var(--zwart---);
+}
+
+
+/* Start cards */
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 0.7em;
+  background: rgb(47, 47, 47);
+  padding-bottom: 3em;
+  width: 20em;
+  transition: 0.2s;
+}
+
+.grid-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5em;
+  margin-top: 3em;
+}
+
+.cards-container {
+  height: 35em;
+}
+
+.cards-container:hover {
+  box-shadow: 0px 5px 14px black;
+}
+
+.cards-container h1 {
+  font-family: "mark pro bold";
+  margin-top: 1em;
+  color: var(--wit---);
+  padding: 1em;
+}
+
+.card-design {
+  background: rgb(40, 193, 40);
+  height: 8em;
+  width: 80%;
+  border-radius: 0.2em;
+  margin-top: 1em;
+  text-align: center;
+  color: var(--wit---);
+  transition: 0.3s;
+}
+
+.card-content p {
+  color: var(--wit---);
+  margin-top: 0.3em;
+}
+
+.card-content h2 {
+  font-family: "mark pro bold";
+}
+
+.card-footer {
+  display: flex;
+  align-items: flex-start;
+  margin-left: 0.3em;
+  color: rgb(123, 120, 120);
+  font-size: 16px;
+}
+
+.card-content svg {
+  height: 1em;
+  margin-left: 0.4em;
+  width: auto;
+  fill: rgb(123, 120, 120);
+}
+
+.card-footer img {
+  height: 2em;
+  width: auto;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 8em;
+}
+
+.card-backend {
+  background: red;
+  height: 7em;
+  width: 80%;
+  border-radius: 0.2em;
+  margin-top: 1em;
+  text-align: center;
+  color: var(--wit---);
+  transition: 0.3s;
+}
+
+.card-frontend {
+  background: var(--blauw---);
+  height: 6em;
+  width: 80%;
+  border-radius: 0.2em;
+  margin-top: 1em;
+  text-align: center;
+  color: var(--wit---);
+  transition: 0.3s;
+}
+
+/* footer */
+
+footer{
+  width: 100%;
+  background: var(--blauw---);
+  height: 8em;
+  margin-top: 3em;
+}
+
+footer div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer img{
+  height: 6em;
+  width: auto;
+  padding-top: 3em;
+}
+
+/* start media qeuries */
+
+@media (min-width: 768px) {
+  .grid-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1080px) {
+  .grid-container {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 3em;
+  }
+}
+
+@media (min-width: 375px) {
+}
+
+/* tablet version */
+
+@media (min-width: 600px) {
+  .grid-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3em;
+    padding: 1em;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .article-footer a{
+    margin-top: 5em;
+  }
+
+  .flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .status {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .mockup-test {
+    height: 14em;
+    width: auto;
+  }
+  header h1 {
+    font-size: 1.8em;
+  }
+  nav {
+    padding-top: 0.5em;
+  }
+  nav ul {
+    gap: 50px;
+  }
+  .branding {
+    height: 3em;
+    width: auto;
+    padding: 0.5em;
+  }
+}
+
+@media (min-width: 930px){
+  .article-header h2{
+    padding-bottom: 3em;
+  }
+}
+
+@media (min-width: 1080px) {
+  .mockup-test {
+    height: 16em;
+    width: auto;
+  }
+}

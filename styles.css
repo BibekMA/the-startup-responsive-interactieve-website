@@ -109,11 +109,16 @@ p {
   border-radius: 10px;
 }
 
-span {
+.button-container{
   display: flex;
   justify-content: center;
   gap: 30px;
 }
+
+.button-container a{
+  color: var(--wit---);
+}
+
 button {
   margin-top: 3em;
   background: var(--groen---);
@@ -125,6 +130,7 @@ button {
 }
 button:hover {
   background: var(--groen-accent--);
+  color: var(--wit---);
 }
 .bekijk-fases {
   text-decoration: none;
@@ -151,9 +157,6 @@ button:hover {
   background: #003cfb;
 }
 
-.card-content{
-  padding: 0.5em;
-}
 
 .card-content h3 {
   display: flex;
@@ -192,6 +195,7 @@ footer li a {
 
 @media (min-width: 640px) {
   /* navbar */
+
   .hamburger {
     display: none;
   }
@@ -218,7 +222,6 @@ footer li a {
   }
   .card-content h1 {
     margin: 1em;
-    padding: 0;
   }
 
   .fase-one:nth-child(5) {

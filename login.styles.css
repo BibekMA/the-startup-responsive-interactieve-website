@@ -26,48 +26,52 @@
 header{
   background: var(--blauw---);
   color: white;
-  height: 12em;
-  width: 100%;
+  height: 13em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
 }
-
 header h1{
  font-family: "Mark Pro bold";
- display: flex;
- justify-content: center;
- padding: 1em;
 }
 
 .img-container{
 display: flex;
 justify-content: center;
+width: 100%;
+margin-top: 1em;
 }
 
 .branding{
   height: 2em;
   width: auto;
-  margin-top: 0%;
 }
 
 .branding path{
   fill: white;
 }
 
+/* header for development-fase */
+
+.development-header{
+  padding: 2.5em;
+}
 
 /* Start nav */
 
-nav{
+ nav{
   background: rgb(43, 42, 42);
   height: 3em;
-  width: 100%;
   font-size: 0.9em;
-  margin-top: 3em;
 }
 
 nav ul{
   display: flex;
   justify-content: center;
   gap: 10px;
-  padding: 0.5em;
+  padding-top: 0.3em;
 }
 
 nav ul li{
@@ -78,8 +82,117 @@ nav ul li a{
  text-decoration: none;
  color: white;
 }
-
 /* start main */
+
+/* Article */
+
+.flex{
+  background: rgb(237, 237, 237);
+  width: 100%;
+}
+
+article{
+  padding-top: 1em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: rgb(237, 237, 237);
+}
+
+article h1{
+  font-family: "mark pro bold";
+  font-size: 1.5em;
+}
+
+article span:nth-child(1){
+  font-size: 1.1em;
+  font-family: "mark pro bold";
+}
+
+article p{
+  text-align: center;
+  max-width: 20em;
+  margin-top: 0.5em;
+  
+}
+
+.article-footer a{
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: var(--blauw---);
+  font-family: "mark pro bold";
+  margin: 1em;
+
+}
+
+/* Onze team */
+
+.onze-team{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align:center;
+  background: rgb(237, 237, 237);
+}
+
+.article-header{
+  text-align: center;
+}
+
+h2{
+  font-family: "mark pro bold";
+ padding-top: 2em;
+ padding-bottom: 2em;
+ display: block;
+}
+
+.onze-team p{
+ padding: 0.5em;
+}
+
+.onze-team img{
+  height: 6em;
+  width: auto;
+  border: 5px solid var(--blauw---);
+  border-radius: 50%;
+  padding: 0.2em;
+  background: var(--wit---);
+}
+
+.onze-team div p{
+  font-family: "mark pro bold";
+}
+
+.onze-team div img{
+  transition: 0.25s;
+}
+
+.onze-team div:nth-child(3) img{
+  border: solid var(--rood---) 5px;
+}
+.onze-team div:nth-child(3) img:hover{
+  box-shadow: 0 7px 14px var(--rood---);
+}
+.onze-team div:nth-child(2) img:hover{
+  box-shadow: 0 7px 14px var(--blauw---);
+}
+.onze-team div:nth-child(4) img{
+  border: solid var(--groen---) 5px;
+}
+.onze-team div:nth-child(4) img:hover{
+  box-shadow: 0 7px 14px var(--groen---);
+}
+
+.onze-team div:nth-child(5) img{
+  border: solid var(--zwart---) 5px;
+}
+
+.onze-team div:nth-child(5) img:hover{
+  box-shadow: 0 7px 14px var(--zwart---);
+}
+
 
 .status{
   margin-top: 5em;
@@ -89,7 +202,6 @@ nav ul li a{
   flex-direction: column;
 }
  
-
 .status-container{
   width: 20em;
   margin: 1em auto;
@@ -122,6 +234,15 @@ nav ul li a{
 .mockup{
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1em;
+}
+
+.mockup P{
+  font-family: "Mark Pro bold";
+  font-size: 1.8em;
+
 }
 
 .mockup-test{
@@ -207,15 +328,52 @@ a{
   fill: white;
 }
 
+/* Footer */
+
+footer{
+  width: 100%;
+  background: var(--blauw---);
+  height: 8em;
+  margin-top: 3em;
+}
+
+footer div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer img{
+  height: 6em;
+  width: auto;
+  padding-top: 3em;
+}
+
 /* media kleine telefoon */
+
 @media (min-width: 375px){
-  nav{
-    width: 100%;
-  }
+
 }
 
  /* tablet version */
+
+ @media (min-width: 600px){
+  .grid-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3em;
+    padding: 1em;
+  }
+ 
+ }
+ 
 @media (min-width: 768px){
+
+  .flex{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
   .status{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -228,7 +386,10 @@ a{
     font-size: 1.8em;
   }
   nav{
-    margin-top: 0.9em;
+    padding-top: 0.5em;
+  }
+  nav ul{
+    gap: 50px;
   }
   .branding{
     height: 3em;
