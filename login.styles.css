@@ -169,27 +169,33 @@ h2{
   transition: 0.25s;
 }
 
-.onze-team div:nth-child(3) img{
-  border: solid var(--rood---) 5px;
-}
-.onze-team div:nth-child(3) img:hover{
-  box-shadow: 0 7px 14px var(--rood---);
-}
-.onze-team div:nth-child(2) img:hover{
+.onze-team img:hover {
   box-shadow: 0 7px 14px var(--blauw---);
 }
-.onze-team div:nth-child(4) img{
+.onze-team div p {
+  font-family: "mark pro bold";
+}
+
+.img-two img {
+  border: solid var(--rood---) 5px;
+}
+.img-two img:hover {
+  box-shadow: 0 7px 14px var(--rood---);
+}
+
+/* 3 */
+.onze-team div:nth-child(3) img {
   border: solid var(--groen---) 5px;
 }
-.onze-team div:nth-child(4) img:hover{
+
+.onze-team div:nth-child(3) img:hover {
   box-shadow: 0 7px 14px var(--groen---);
 }
 
-.onze-team div:nth-child(5) img{
+.onze-team div:nth-child(4) img {
   border: solid var(--zwart---) 5px;
 }
-
-.onze-team div:nth-child(5) img:hover{
+.onze-team div:nth-child(4) img:hover {
   box-shadow: 0 7px 14px var(--zwart---);
 }
 
