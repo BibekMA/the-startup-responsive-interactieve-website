@@ -131,6 +131,7 @@ button {
 button:hover {
   background: var(--groen-accent--);
   color: var(--wit---);
+  cursor: pointer;
 }
 .bekijk-fases {
   text-decoration: none;
